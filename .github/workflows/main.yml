@@ -1,0 +1,28 @@
+name: Build Mod
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  build:
+    name: Windows
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the mod
+        uses: geode-sdk/build-geode-mod@main
+        id: build
+        with:
+          sdk: latest
+          bindings: geode-sdk/bindings
+          bindings-ref: 1605f500d053f8de122bf5c7dc6d17c24866e02e
+          configure-args: -DSKIP_BUILDING_CODEGEN=OFF
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Mod Windows
+          path: ${{ steps.build.outputs.build-output }}
