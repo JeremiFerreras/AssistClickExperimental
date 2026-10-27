@@ -1,0 +1,67 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"mac": "2.2081",
+		"android": "2.2081",
+		"ios": "2.2081"
+	},
+	"version": "v4.6.0",
+	"id": "geodepredictive.inputbuffer",
+	"name": "Geode Predictive Input Buffer",
+	"developer": "Custom fork",
+	"description": "Trajectory-prediction input buffer with video-style Windows console; based on Input Buffer's simulation engine.",
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		],
+		"fonts": {
+			"ibFont": {
+				"path": "resources/fonts/Poppins-Bold.ttf",
+				"size": 48,
+				"charset": "32-126"
+			}
+		}
+	},
+	"settings": {
+		"stage": {
+			"type": "string",
+			"name": "Prediction Stage",
+			"description": "F6 cycles Stage 1 (2/2 base ticks), Stage 2 (4/4), Stage 3 (8/8), Stage 4 (16/8), and Off. Values are All / Wave.",
+			"default": "Stage 1",
+			"one-of": [
+				"Off",
+				"Stage 1",
+				"Stage 2",
+				"Stage 3",
+				"Stage 4"
+			]
+		},
+		"cycle-key": {
+			"type": "keybind",
+			"name": "Stage Cycle Key",
+			"description": "Cycles the video-matched prediction stages.",
+			"default": "F6",
+			"category": "gameplay"
+		},
+		"console-key": {
+			"type": "keybind",
+			"name": "Console Toggle Key",
+			"description": "Closes or reopens the live command-prompt console on Windows.",
+			"default": "F7",
+			"category": "general"
+		},
+		"auto-scan": {
+			"type": "bool",
+			"name": "Automatic Level Scan",
+			"description": "Incrementally index level objects during live gameplay (read-only); the route/physics scan starts on pause and must stay paused.",
+			"default": true
+		},
+		"route-snap": {
+			"type": "bool",
+			"name": "Use Scanned Route (Experimental)",
+			"description": "Let early inputs match the route found by automatic scanning. Off by default because a scan can be imperfect on portal-heavy or otherwise unsupported levels.",
+			"default": false
+		}
+	}
+}

@@ -1,0 +1,13 @@
+[InputBuffer] live level scan started: 25000 objects; read-only indexing while gameplay continues.
+[InputBuffer] live level scan progress: 10% (2560/25000 objects; hazards=209, solids=574, orbs=74, pads=26).
+[InputBuffer] live level scan progress: 20% (5120/25000 objects; hazards=418, solids=1149, orbs=149, pads=52).
+[InputBuffer] live level scan progress: 30% (7680/25000 objects; hazards=628, solids=1724, orbs=222, pads=78).
+[InputBuffer] live level scan progress: 40% (10240/25000 objects; hazards=835, solids=2299, orbs=297, pads=104).
+[InputBuffer] live level scan progress: 50% (12800/25000 objects; hazards=1045, solids=2873, orbs=370, pads=129).
+[InputBuffer] live level scan progress: 60% (15360/25000 objects; hazards=1254, solids=3448, orbs=445, pads=155).
+[InputBuffer] live level scan progress: 70% (17920/25000 objects; hazards=1463, solids=4023, orbs=520, pads=181).
+[InputBuffer] live level scan progress: 80% (20480/25000 objects; hazards=1671, solids=4598, orbs=594, pads=207).
+[InputBuffer] live level scan progress: 90% (22528/25000 objects; hazards=1839, solids=5057, orbs=653, pads=228).
+[InputBuffer] live level scan complete: 25000/25000 objects; hazards=2041, solids=5613, slopes=222, orbs=724, pads=252, state-change=976, disabled=676, decorations=1872.
+[Simulation] completed in 49 frame slices; max object reads per frame = 512.
+[Simulation] physics route scan is intentionally deferred until the real level is paused.
